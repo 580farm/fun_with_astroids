@@ -2,8 +2,8 @@
 
 ## Vision
 
-Fun with Asteroids is a family-built 2D arcade game inspired by classic
-asteroid-dodging games. Players fly historically accurate spacecraft from the
+Fun with Asteroids is a family-built fixed 2D side-scroller inspired by simple
+dodge games. Players fly historically accurate spacecraft from the
 Space Race through today, avoiding asteroid fields instead of destroying them.
 
 The project is also a hands-on way to learn Python programming together. Each
@@ -13,17 +13,19 @@ object-oriented design.
 
 ## Player Fantasy
 
-You are a spacecraft pilot threading a dangerous path through space history. A
-tiny Mercury capsule feels different from a Space Shuttle, Soyuz, Dragon, or
-Orion. Each ship has tradeoffs, and each country or space program unlocks its
-own style of technology.
+You are a spacecraft pilot threading a dangerous side-scrolling path through
+space history. A tiny Mercury capsule feels different from a Space Shuttle,
+Soyuz, Dragon, or Orion. Each ship has tradeoffs, and each country or space
+program unlocks its own style of technology.
 
 ## Core Gameplay
 
 - Dodge asteroids.
+- Stay near the left side of the screen while hazards enter from the right.
+- Use vertical thrusters to move up and down in zero gravity.
 - Complete timed levels.
-- Earn points for finishing quickly, collecting helpful powerups, and avoiding
-  damage.
+- Earn points for surviving, dodging asteroids, collecting helpful powerups, and
+  avoiding damage.
 - Lose points or credits for asteroid impacts.
 - Unlock new spacecraft and upgrades with credits earned from play.
 - Explore tech trees that differ by country or space program.
@@ -33,7 +35,7 @@ own style of technology.
 The first version should be intentionally small:
 
 - One spacecraft.
-- One asteroid field.
+- One side-scrolling asteroid lane.
 - One timed round.
 - Basic score display.
 - Collision penalties.
@@ -47,7 +49,8 @@ progression.
 The initial score should be simple enough to explain:
 
 - Start from a level completion bonus.
-- Add time remaining when the level ends.
+- Add survival time during the run.
+- Add a bonus for each asteroid that passes safely.
 - Add bonuses for collected powerups.
 - Subtract points for each asteroid hit.
 - Convert a portion of score into credits.

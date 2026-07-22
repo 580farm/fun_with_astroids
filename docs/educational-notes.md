@@ -8,7 +8,7 @@ be teachable in small pieces.
 | Game Feature | Programming Concept |
 | --- | --- |
 | Game settings | Constants and dataclasses |
-| Player movement | Variables and vectors |
+| Player vertical movement | Variables and vectors |
 | Input handling | Conditionals and events |
 | Game loop | Loops and timing |
 | Ship and asteroid objects | Classes and methods |
@@ -19,9 +19,11 @@ be teachable in small pieces.
 
 ## Math Concepts
 
-- Angles and rotation.
+- Sprite tilt and rotation.
 - Velocity and acceleration.
 - Distance between two points.
+- Thrusters, inertia, and damping.
+- Side-scrolling motion and relative movement.
 - Random numbers.
 - Timers and rates.
 - Coordinate systems.

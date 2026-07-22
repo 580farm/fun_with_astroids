@@ -22,13 +22,14 @@ Goal: open a game window and close it cleanly.
 
 ## Milestone 2: Player Ship
 
-Goal: make one spacecraft feel good to fly.
+Goal: make one spacecraft feel good in a side-scroller.
 
 - Draw the starter ship.
-- Rotate left and right.
-- Thrust forward.
-- Add drift and drag.
-- Wrap around screen edges.
+- Keep the ship fixed near the left side of the screen.
+- Add upward thrust with `Space`, `Up`, or `W`.
+- Add downward thrust with `Down` or `S`.
+- Add gentle damping so the ship does not drift forever.
+- Clamp the ship inside the screen.
 
 ## Milestone 3: Asteroid Field
 
@@ -36,8 +37,9 @@ Goal: create the first real obstacle.
 
 - Spawn asteroids at different positions.
 - Give asteroids different sizes and speeds.
-- Wrap asteroids around screen edges.
-- Avoid unfair spawning directly on top of the player.
+- Move asteroids from right to left.
+- Respawn asteroids after they leave the left side of the screen.
+- Space asteroids out so the first version is readable.
 
 ## Milestone 4: Collisions and Feedback
 
@@ -47,6 +49,7 @@ Goal: make danger understandable.
 - Add hit cooldown so one collision does not count many times.
 - Flash or tint the ship after a hit.
 - Add a simple hit counter.
+- Count asteroids dodged when they pass off the left side.
 
 ## Milestone 5: Scoring
 

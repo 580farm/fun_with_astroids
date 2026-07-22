@@ -1,12 +1,12 @@
 # Fun with Asteroids
 
-A family-built 2D arcade game about flying real spacecraft through asteroid
-fields. The first goal is a small, playable Python game. The bigger goal is to
-learn programming, game design, and spaceflight history together.
+A family-built fixed 2D side-scroller about flying real spacecraft through
+asteroid fields. The first goal is a small, playable Python game. The bigger
+goal is to learn programming, game design, and spaceflight history together.
 
 Players dodge asteroids instead of destroying them. Levels are timed, scores
-reward careful flying, and credits unlock historical spacecraft, pilot skills,
-engineering upgrades, and navigation tools.
+reward survival and clean dodges, and credits unlock historical spacecraft,
+pilot skills, engineering upgrades, and navigation tools.
 
 ## Current Status
 
@@ -14,8 +14,9 @@ This repo is at the starter scaffold stage:
 
 - Project documentation is organized from the initial design notes.
 - A minimal Pygame CE game loop is in place.
-- The player ship can turn, thrust, drift, wrap around the screen, and collide
-  with moving asteroids.
+- The player ship stays near the left side of the screen while asteroids scroll
+  in from the right.
+- The player uses vertical thrusters to dodge hazards in zero gravity.
 - A small test suite covers early data structures and scoring behavior.
 
 ## Quick Start
@@ -47,9 +48,8 @@ python -m unittest
 
 ## Controls
 
-- `Left` / `A`: rotate counterclockwise
-- `Right` / `D`: rotate clockwise
-- `Up` / `W`: thrust
+- `Space` / `Up` / `W`: thrust upward
+- `Down` / `S`: thrust downward
 - `Escape`: quit
 
 ## Project Map
@@ -66,7 +66,8 @@ python -m unittest
 
 ## Design Pillars
 
-1. **Dodge, do not destroy.** The game is about skillful flight through danger.
+1. **Dodge, do not destroy.** The game is about timing vertical movement through
+   side-scrolling danger.
 2. **Real spacecraft first.** Ships should be inspired by actual vehicle shapes,
    eras, countries, and mission roles.
 3. **Small playable steps.** Every milestone should teach one useful concept and

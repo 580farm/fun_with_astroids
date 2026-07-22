@@ -34,7 +34,8 @@ to its real role, era, and shape.
 
 ## Possible Stat Categories
 
-- Turn rate
+- Climb strength
+- Vertical control
 - Thrust
 - Drag
 - Shield capacity

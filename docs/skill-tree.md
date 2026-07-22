@@ -10,10 +10,10 @@ Focus: movement skill and ship handling.
 
 | Upgrade | Effect | Notes |
 | --- | --- | --- |
-| Faster Turning | Increases rotation speed | Helps dodge tight asteroid gaps |
-| Boost | Adds a short burst of thrust | Should have a cooldown |
-| Better Handling | Reduces drift slightly | Makes capsules easier for beginners |
-| Precision Thrusters | Improves low-speed control | Good for docking-style levels |
+| Quick Climb | Increases vertical thrust | Helps dodge tight asteroid gaps |
+| Boost | Adds a short burst upward or forward | Should have a cooldown |
+| Better Handling | Reduces vertical floatiness | Makes capsules easier for beginners |
+| Precision Thrusters | Improves small altitude changes | Good for docking-style levels |
 | Evasive Roll | Briefly reduces collision penalty | Could be a late upgrade |
 
 ## Engineer Tree
@@ -35,7 +35,7 @@ Focus: awareness, planning, and timing.
 | Upgrade | Effect | Notes |
 | --- | --- | --- |
 | Trajectory Prediction | Shows short asteroid paths | Teaches vectors visually |
-| Radar | Highlights nearby off-screen hazards | Useful when wrapping is active |
+| Radar | Highlights incoming right-side hazards | Useful when speeds increase |
 | Slow Motion | Briefly slows hazards | Strong ability, use a cooldown |
 | Route Planner | Adds bonus path markers | Could support challenge levels |
 | Sensor Boost | Increases pickup detection range | Good non-combat reward |
@@ -51,7 +51,7 @@ Focus: awareness, planning, and timing.
 
 Start with three upgrades:
 
-- Faster Turning
+- Quick Climb
 - Shield
 - Radar
 

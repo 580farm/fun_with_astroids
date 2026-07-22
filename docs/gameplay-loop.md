@@ -3,8 +3,8 @@
 ## Core Loop
 
 1. Choose or continue with a spacecraft.
-2. Start a timed asteroid field.
-3. Dodge asteroids while managing speed and direction.
+2. Start a timed side-scrolling asteroid lane.
+3. Use vertical thrusters to dodge incoming asteroids.
 4. Collect optional powerups.
 5. Finish the timer.
 6. Receive score and credits.
@@ -13,24 +13,26 @@
 
 ## Moment-to-Moment Feel
 
-The ship should feel like it is floating in space:
+The ship should feel simple, readable, and slightly floaty:
 
-- Thrust adds momentum.
-- Turning changes facing direction.
-- Releasing thrust should not stop the ship immediately.
-- A little drag keeps the game manageable.
-- Wrapping around the screen keeps movement continuous.
+- The ship stays near the left side of the screen.
+- Holding upward thrust moves the ship up.
+- Holding downward thrust moves the ship down.
+- Releasing controls leaves a little space-like drift that gently settles.
+- Asteroids enter from the right and move left.
+- Dodging should feel like timing a path through moving gaps.
 
 ## Round Structure
 
 Recommended starter round:
 
-- Duration: 60 seconds
+- Duration: 45 seconds
 - Asteroids: 6
 - Ship: Mercury-style starter capsule
 - Collision penalty: 150 points
 - Completion bonus: 1000 points
-- Time bonus: 10 points per second remaining
+- Survival bonus: 12 points per second survived
+- Dodge bonus: 75 points per asteroid safely passed
 
 ## Failure and Success
 
@@ -45,6 +47,7 @@ The first HUD should show:
 - Time remaining
 - Score
 - Hits
+- Dodged asteroids
 - Credits preview
 
 Later HUD additions:
@@ -59,8 +62,8 @@ Later HUD additions:
 
 Difficulty can increase through:
 
-- More asteroids.
-- Faster asteroid speeds.
+- More asteroids on screen.
+- Faster right-to-left asteroid speeds.
 - Larger asteroid sizes.
 - Longer rounds.
 - Fewer powerups.

@@ -21,8 +21,9 @@ The first implementation uses Pygame drawing commands:
 
 - A triangular capsule-style player ship.
 - Circular asteroids with outline rings.
-- Text HUD for time, score, hits, and credits.
+- Text HUD for time, score, hits, dodged asteroids, and credits.
 - Solid-color space background.
+- Subtle scrolling star or lane lines to make right-to-left motion visible.
 
 These placeholders are acceptable until core gameplay feels good.
 
@@ -37,7 +38,7 @@ Recommended sprite sizes:
 - Large asteroid: 64x64
 - UI icons: 16x16 or 24x24
 
-Keep sprites readable when rotated and scaled.
+Keep sprites readable when tilted and scaled.
 
 ## Spacecraft Visual Notes
 

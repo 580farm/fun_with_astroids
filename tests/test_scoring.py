@@ -5,24 +5,26 @@ from fun_with_asteroids.scoring import calculate_score, credits_from_score
 
 
 class ScoringTests(unittest.TestCase):
-    def test_score_rewards_time_and_penalizes_collisions(self):
+    def test_score_rewards_survival_and_dodges(self):
         settings = GameSettings(
             completion_bonus=1000,
-            time_bonus_per_second=10,
+            survival_bonus_per_second=12,
+            asteroid_dodge_bonus=75,
             collision_penalty=150,
         )
 
         score = calculate_score(
-            seconds_remaining=12,
+            seconds_survived=12,
             collisions=2,
+            asteroids_dodged=4,
             powerup_bonus=50,
             settings=settings,
         )
 
-        self.assertEqual(score.total, 870)
+        self.assertEqual(score.total, 1194)
 
     def test_score_never_goes_below_zero(self):
-        score = calculate_score(seconds_remaining=0, collisions=100)
+        score = calculate_score(seconds_survived=0, collisions=100)
         self.assertEqual(score.total, 0)
 
     def test_credits_use_score_divisor(self):

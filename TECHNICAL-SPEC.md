@@ -33,8 +33,8 @@ src/fun_with_asteroids/
 
 ## Module Responsibilities
 
-- `config.py`: screen size, colors, movement tuning, level timing, and scoring
-  constants.
+- `config.py`: screen size, colors, side-scroller tuning, level timing, and
+  scoring constants.
 - `entities.py`: player ship and asteroid behavior.
 - `game.py`: Pygame initialization, event loop, update, render, and shutdown.
 - `progression.py`: starter spacecraft and upgrade tree data.
@@ -47,10 +47,10 @@ Each frame should follow the same rhythm:
 
 1. Read player input and window events.
 2. Update the level timer.
-3. Update player movement.
-4. Update asteroid movement.
+3. Update player vertical movement.
+4. Move asteroids from right to left.
 5. Check collisions.
-6. Update score state.
+6. Count safely dodged asteroids and update score state.
 7. Draw the frame.
 8. Wait just enough to maintain the target frame rate.
 
@@ -62,8 +62,9 @@ Pygame uses screen coordinates:
 - `y` grows from top to bottom.
 - `(0, 0)` is the top-left corner.
 
-The first playable version wraps ships and asteroids around screen edges. This
-keeps gameplay continuous and avoids immediate failure at the borders.
+The first playable version fixes the player's `x` position near the left side
+of the screen. The player controls only vertical movement. Asteroids spawn off
+the right edge, travel left, and respawn after leaving the screen.
 
 ## Asset Strategy
 

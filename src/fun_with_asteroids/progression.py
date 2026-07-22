@@ -29,7 +29,7 @@ STARTER_SPACECRAFT = (
         name="Vostok",
         program="Soviet Union",
         era="1960s",
-        handling="Stable capsule with forgiving drift.",
+        handling="Stable capsule with forgiving vertical control.",
     ),
     Spacecraft(
         name="Gemini",
@@ -42,10 +42,10 @@ STARTER_SPACECRAFT = (
 
 STARTER_UPGRADES = (
     Upgrade(
-        name="Faster Turning",
+        name="Quick Climb",
         tree="Pilot",
         cost=3,
-        description="Increase ship rotation speed.",
+        description="Increase vertical thrust for tighter dodges.",
     ),
     Upgrade(
         name="Shield",
