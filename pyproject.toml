@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fun-with-asteroids"
+version = "0.1.0"
+description = "A Python/Pygame asteroid-dodging game with historical spacecraft."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pygame-ce>=2.5.0",
+]
+
+[project.optional-dependencies]
+dev = []
+
+[project.scripts]
+fun-with-asteroids = "fun_with_asteroids.game:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
